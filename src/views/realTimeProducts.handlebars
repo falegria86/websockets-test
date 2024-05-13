@@ -1,0 +1,67 @@
+<div style="display: flex;">
+    <div class="product-form">
+        <h3 style="text-align: center;">Add product</h3>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" id="description">
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" id="price">
+        </div>
+
+        <div class="form-group">
+            <label for="thumbnail">Thumbnail URL</label>
+            <input type="text" id="thumbnail">
+        </div>
+
+        <div class="form-group">
+            <label for="code">Code</label>
+            <input type="text" id="code">
+        </div>
+
+        <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="number" id="stock">
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="true">Active</option>
+                <option value="false">Inactive</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" id="category">
+        </div>
+
+        <button id="submit">Add product</button>
+    </div>
+
+    <div class="product-form delete-product">
+        <h3 style="text-align: center;">Delete product</h3>
+        <div class="form-group">
+            <label for="title">Product ID</label>
+            <input type="text" id="productID">
+        </div>
+        <button id="deleteBtn">Delete product</button>
+    </div>
+
+    <div style="width: 100%;">
+        <h1 style="text-align: center;">Products list</h1>
+        <div class="container">
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="index.js"></script>
